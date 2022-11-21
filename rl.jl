@@ -91,5 +91,5 @@ agent = Agent(
         terminal=Vector{Bool} => (N_ENV,)
     ),
 )
-ex = Experiment(agent, env, StopAfterStep(10_000), TotalBatchRewardPerEpisode(N_ENV), "# PPO with CartPole")
+ex = Experiment(agent, env, StopAfterStep(10_000), TotalBatchRewardPerEpisode(N_ENV), "Example pod racer env")
 run(ex)
